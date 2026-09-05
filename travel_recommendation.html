@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TravelBloom</title>
+    <link rel="stylesheet" href="travel_recommendation.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">TravelBloom</div>
+        <div class="nav-links">
+            <a href="#home">Home</a>
+            <a href="#about">About Us</a>
+            <a href="#contact">Contact Us</a>
+        </div>
+        <div class="search-bar">
+            <input type="text" id="searchInput" placeholder="Enter a destination or keyword">
+            <button id="searchBtn">Search</button>
+            <button id="resetBtn">Clear</button>
+        </div>
+    </nav>
+
+    <div class="social-icons">
+        <a href="#">Twitter</a>
+        <a href="#">Facebook</a>
+        <a href="#">Instagram</a>
+        <a href="#">YouTube</a>
+    </div>
+
+    <section id="home" class="content-section">
+        <div class="hero-text">
+            <h1>EXPLORE DREAM DESTINATION</h1>
+            <p>The Travel Recommendation App helps users explore popular travel destinations through an interactive and user-friendly interface. It allows users to search for beaches, temples, countries, or specific country names to view related cities along with images and descriptions. The app dynamically fetches data from a structured JSON file to display relevant results.</p>
+            <button class="book-now">Book Now</button>
+        </div>
+    </section>
+
+    <section id="results" class="results-grid"></section>
+
+    <section id="about" class="content-section" style="display:none;">
+        <h2>ABOUT US</h2>
+        <p>Welcome to Our Company! We are a team of passionate individuals dedicated to providing excellent services.</p>
+        <div class="team">
+            <div><h3>John Doe</h3><p>CEO</p></div>
+            <div><h3>Celina Thomas</h3><p>Team Lead</p></div>
+            <div><h3>Mike T</h3><p>Delivery</p></div>
+        </div>
+    </section>
+
+    <section id="contact" class="content-section" style="display:none;">
+        <h2>CONTACT US</h2>
+        <p>Get in touch</p>
+        <form id="contactForm">
+            <input type="text" placeholder="Name" required>
+            <input type="email" placeholder="Email" required>
+            <textarea placeholder="Message" required></textarea>
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+    <script src="travel_recommendation.js"></script>
+</body>
+</html>
